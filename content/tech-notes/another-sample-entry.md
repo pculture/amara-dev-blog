@@ -1,8 +1,8 @@
-Slug: some-sample-entry
-Date: 2010-12-03
-Title: My super title
+Slug: one-more-sample-entry
+Date: 2012-12-03
+Title: Number two
 Author: Steve Losh
-Tags: python, mysql
+Tags: python, django
 Category: tech notes
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed enim ac ligula cursus mollis. Nullam aliquam, urna sed pellentesque mollis, diam metus tempor turpis, a luctus arcu libero ac lacus. Etiam nunc nulla, iaculis eu dapibus eu, volutpat a ante. Aenean malesuada varius elit, at rutrum tortor cursus id. Donec consequat sapien aliquet magna dictum fringilla. Phasellus eu est ut metus faucibus viverra quis at purus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet placerat quam in eleifend. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus ut rutrum turpis.
