@@ -26,3 +26,7 @@ SOCIAL = (
     ('twitter', 'http://twitter.com/amarasubs'),
     ('github', 'http://github.com/pculture/'),
 )
+
+STATIC_PATHS = ["images", ]
+
+
