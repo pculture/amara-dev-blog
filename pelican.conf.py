@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = u"Amara Team"
-SITENAME = u"Amara Dev Blog"
+SITENAME = u"Amara Labs"
 SITEURL = '/'
 THEME = './theme'
 
@@ -23,8 +23,8 @@ LINKS =  (
 )
 
 SOCIAL = (
-    ('twitter', 'http://twitter.com/amarasubs'),
-    ('github', 'http://github.com/pculture/'),
+    ('Twitter', 'http://twitter.com/amarasubs'),
+    ('Github', 'http://github.com/pculture/'),
 )
 
 STATIC_PATHS = ["images", ]
