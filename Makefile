@@ -50,7 +50,7 @@ ssh_upload: $(OUTPUTDIR)/index.html
 
 deploy: $(OUTPUTDIR)/index.html
 	ssh -p 2191 $(SSH_USER)@dev.amara.org "mkdir -p $(DEPLOY_TMP_DIR)"
-	scp -P 2191 -r $(OUTPUTDIR)/* $(SSH_USER)@dev.amara.org:$(DEPLOY_TMP_DIR)/
+	rsync -avz -e "ssh -p 2191" $(OUTPUTDIR)/* $(SSH_USER)@dev.amara.org:$(DEPLOY_TMP_DIR)/
 	ssh -p 2191 -t $(SSH_USER)@dev.amara.org "sudo s3cmd -c /etc/s3cfg --recursive put $(DEPLOY_TMP_DIR)/* s3://$(S3_BUCKET)/ ; rm -rf $(DEPLOY_TMP_DIR)"
 
 ftp_upload: $(OUTPUTDIR)/index.html
