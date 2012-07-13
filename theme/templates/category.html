@@ -1,3 +1,29 @@
 {% extends "index.html" %}
 
 {% block title %}{{ SITENAME }} - {{ category }}{% endblock %}
+
+{% block content %}
+    <section class="recent-articles">
+        <h2>{{ category|capitalize }}</h2>
+
+        <ul class="articles">
+            {% for article in articles_page.object_list %}
+                <li class="article">
+                    <h3 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                    <p class="article-info">
+                        Posted by
+                        <a class="url fn" href="{{ SITEURL }}/author/{{ article.author }}.html">{{ article.author }}</a>
+                        on
+                        <abbr class="published" title="{{ article.date.isoformat() }}">
+                            {{ article.locale_date }}
+                        </abbr>
+                        in
+                        <a href="{{ SITEURL }}/category/{{ article.category }}.html">{{ article.category }}</a>.
+                    </p>
+                </aside>
+            {% endfor %}
+        </ul>
+
+        <p><a href="archives.html">View All Entries</a></p>
+    </section>
+{% endblock content %}
